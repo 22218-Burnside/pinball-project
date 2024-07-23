@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbcv1ysddanch"]
+
+[ext_resource type="Script" path="res://scripts/flipper_left.gd" id="1_818cm"]
+[ext_resource type="Texture2D" uid="uid://o6rscjftnnb8" path="res://flipper sprint one.png" id="2_grxyd"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_74a53"]
+bounce = 0.6
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycgt4"]
+size = Vector2(319, 47)
+
+[node name="flipper left" type="Node2D"]
+rotation = -3.14159
+scale = Vector2(0.7, 1)
+script = ExtResource("1_818cm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-100, 0)
+physics_material_override = SubResource("PhysicsMaterial_74a53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.526316, -0.5)
+shape = SubResource("RectangleShape2D_ycgt4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-100, 0)
+scale = Vector2(20, 3)
+texture = ExtResource("2_grxyd")

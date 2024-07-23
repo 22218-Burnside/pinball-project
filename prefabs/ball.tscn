@@ -1,6 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjfpyv0s3dr06"]
+[gd_scene load_steps=5 format=3 uid="uid://bjfpyv0s3dr06"]
 
+[ext_resource type="Script" path="res://scripts/ball.gd" id="1_i07gp"]
 [ext_resource type="Texture2D" uid="uid://bpj7irfehnqcy" path="res://New Piskel-1.png" id="1_se472"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_h3k5r"]
+bounce = 0.75
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bogwd"]
 radius = 51.6769
@@ -8,12 +12,18 @@ radius = 51.6769
 [node name="ball" type="RigidBody2D"]
 texture_filter = 1
 position = Vector2(27.5, 27.5)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(43.5, 41.5)
-shape = SubResource("CircleShape2D_bogwd")
+mass = 0.1
+physics_material_override = SubResource("PhysicsMaterial_h3k5r")
+continuous_cd = 2
+script = ExtResource("1_i07gp")
 
 [node name="RigidBody2D" type="Sprite2D" parent="."]
 position = Vector2(44.25, 44.25)
 scale = Vector2(6.53125, 6.53125)
 texture = ExtResource("1_se472")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(44.5, 44.5)
+shape = SubResource("CircleShape2D_bogwd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

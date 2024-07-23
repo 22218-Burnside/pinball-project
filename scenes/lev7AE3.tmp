@@ -27,9 +27,9 @@ rotation = -0.484839
 scale = Vector2(0.912718, 0.382813)
 
 [node name="floor bottom left" parent="." instance=ExtResource("2_uho6s")]
-position = Vector2(76.1476, 542.13)
+position = Vector2(212.247, 542.932)
 rotation = 0.412511
-scale = Vector2(0.94557, 0.382813)
+scale = Vector2(3.14077, 0.382813)
 
 [node name="floor top" parent="." instance=ExtResource("2_uho6s")]
 position = Vector2(322.5, 5)
@@ -44,7 +44,7 @@ rotation = -0.00397421
 scale = Vector2(0.7, 1)
 
 [node name="flipper left" parent="." instance=ExtResource("5_0j7uo")]
-position = Vector2(89, 555)
+position = Vector2(126, 738)
 
 [node name="trigger" parent="." instance=ExtResource("7_t7ivu")]
 position = Vector2(316, 332)
@@ -80,4 +80,4 @@ offset_right = 198.0
 offset_bottom = 20.0
 grow_horizontal = 0
 grow_vertical = 2
-text = "000"
+text = "SCORE: 0000"
