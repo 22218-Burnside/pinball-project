@@ -1,10 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bjfpyv0s3dr06"]
 
+[ext_resource type="PhysicsMaterial" uid="uid://bcyeyyv7m070s" path="res://scripts/ball.tres" id="1_8dd34"]
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_i07gp"]
 [ext_resource type="Texture2D" uid="uid://bpj7irfehnqcy" path="res://New Piskel-1.png" id="1_se472"]
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_h3k5r"]
-bounce = 0.75
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bogwd"]
 radius = 51.6769
@@ -13,8 +11,10 @@ radius = 51.6769
 texture_filter = 1
 position = Vector2(27.5, 27.5)
 mass = 0.1
-physics_material_override = SubResource("PhysicsMaterial_h3k5r")
+physics_material_override = ExtResource("1_8dd34")
 continuous_cd = 2
+max_contacts_reported = 1
+contact_monitor = true
 script = ExtResource("1_i07gp")
 
 [node name="RigidBody2D" type="Sprite2D" parent="."]

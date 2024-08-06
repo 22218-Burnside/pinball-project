@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_tyf58"]
 [ext_resource type="PackedScene" uid="uid://q76r1ro2j2ut" path="res://prefabs/floor.tscn" id="2_uho6s"]
 [ext_resource type="PackedScene" uid="uid://bjfpyv0s3dr06" path="res://prefabs/ball.tscn" id="3_b66mj"]
-[ext_resource type="PackedScene" uid="uid://cbulaipc3uwvr" path="res://prefabs/flipper.tscn" id="4_1jrjh"]
+[ext_resource type="PackedScene" uid="uid://cbulaipc3uwvr" path="res://prefabs/flipper_right.tscn" id="4_1jrjh"]
 [ext_resource type="PackedScene" uid="uid://dbcv1ysddanch" path="res://prefabs/flipper_left.tscn" id="5_0j7uo"]
 [ext_resource type="PackedScene" uid="uid://ba21uh38bboam" path="res://prefabs/trigger.tscn" id="7_t7ivu"]
 [ext_resource type="Theme" uid="uid://bbihf24146kch" path="res://new_theme.tres" id="8_2r820"]
@@ -36,15 +36,16 @@ position = Vector2(322.5, 5)
 scale = Vector2(4.66406, 0.382813)
 
 [node name="ball" parent="." instance=ExtResource("3_b66mj")]
-position = Vector2(463, 56)
+position = Vector2(434, 70)
 
 [node name="flipper right" parent="." instance=ExtResource("4_1jrjh")]
-position = Vector2(582, 558)
+position = Vector2(539, 551)
 rotation = -0.00397421
 scale = Vector2(0.7, 1)
 
 [node name="flipper left" parent="." instance=ExtResource("5_0j7uo")]
 position = Vector2(89, 555)
+rotation = -3.14159
 
 [node name="trigger" parent="." instance=ExtResource("7_t7ivu")]
 position = Vector2(316, 332)
