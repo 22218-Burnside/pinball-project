@@ -13,12 +13,18 @@ config_version=5
 config/name="pinball project"
 run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Sprites/icon.svg"
 
 [autoload]
 
 TriggerScore="*res://scripts/trigger_SCORE.gd"
 Game="*res://scripts/game.gd"
+
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=600
+window/stretch/mode="viewport"
 
 [input]
 

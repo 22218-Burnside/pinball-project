@@ -1,19 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://cbulaipc3uwvr"]
 
 [ext_resource type="Script" path="res://scripts/flipper_right.gd" id="1_d08cg"]
-[ext_resource type="Texture2D" uid="uid://o6rscjftnnb8" path="res://flipper sprint one.png" id="1_se3pe"]
-[ext_resource type="PhysicsMaterial" uid="uid://bcyeyyv7m070s" path="res://scripts/ball.tres" id="2_mrsv1"]
+[ext_resource type="Texture2D" uid="uid://o6rscjftnnb8" path="res://Sprites/flipper sprint one.png" id="1_se3pe"]
+[ext_resource type="PhysicsMaterial" uid="uid://0mpge7qednvu" path="res://scripts/flipper.tres" id="2_sx0b5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycgt4"]
 size = Vector2(319, 47)
 
 [node name="flipper_right" type="Node2D"]
 rotation = -0.349066
+script = ExtResource("1_d08cg")
 
 [node name="flipper" type="StaticBody2D" parent="."]
 position = Vector2(-100, 0)
-physics_material_override = ExtResource("2_mrsv1")
-script = ExtResource("1_d08cg")
+physics_material_override = ExtResource("2_sx0b5")
+constant_linear_velocity = Vector2(5, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="flipper"]
 position = Vector2(-0.526321, -0.500004)

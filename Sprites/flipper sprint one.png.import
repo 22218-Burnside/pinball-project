@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dek6ubatolv62"
-path="res://.godot/imported/trigger active.png-7a839eb7c00aff9613829ab0e7732065.ctex"
+uid="uid://o6rscjftnnb8"
+path="res://.godot/imported/flipper sprint one.png-a12c01bda876fc30d1b990e45177dbec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trigger active.png"
-dest_files=["res://.godot/imported/trigger active.png-7a839eb7c00aff9613829ab0e7732065.ctex"]
+source_file="res://Sprites/flipper sprint one.png"
+dest_files=["res://.godot/imported/flipper sprint one.png-a12c01bda876fc30d1b990e45177dbec.ctex"]
 
 [params]
 

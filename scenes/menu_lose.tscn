@@ -14,19 +14,19 @@ script = ExtResource("1_51k2r")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 481.0
-offset_top = 148.0
-offset_right = 707.0
-offset_bottom = 191.0
+offset_left = 295.0
+offset_top = 53.0
+offset_right = 521.0
+offset_bottom = 96.0
 theme = ExtResource("1_wr0ic")
 text = "LOSE SCREEN"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 481.0
-offset_top = 187.0
-offset_right = 699.0
-offset_bottom = 264.0
+offset_left = 294.0
+offset_top = 103.0
+offset_right = 514.0
+offset_bottom = 180.0
 theme = ExtResource("1_wr0ic")
 text = "FINAL SCORE: 
 0000"
@@ -47,5 +47,5 @@ grow_vertical = 2
 theme = ExtResource("1_wr0ic")
 text = "menu"
 
-[connection signal="pressed" from="menu" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="menu" to="." method="_on_button_pressed"]

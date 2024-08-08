@@ -2,7 +2,7 @@
 
 [ext_resource type="PhysicsMaterial" uid="uid://bcyeyyv7m070s" path="res://scripts/ball.tres" id="1_8dd34"]
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_i07gp"]
-[ext_resource type="Texture2D" uid="uid://bpj7irfehnqcy" path="res://New Piskel-1.png" id="1_se472"]
+[ext_resource type="Texture2D" uid="uid://bpj7irfehnqcy" path="res://Sprites/New Piskel-1.png" id="1_se472"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bogwd"]
 radius = 51.6769
