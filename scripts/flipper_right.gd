@@ -1,5 +1,4 @@
 extends Node2D
-class_name flipper
 var flipping = false
 
 # code for controls that allow the player to move the flipper.

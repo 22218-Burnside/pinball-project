@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dn8lak8y72t7b"]
+[gd_scene load_steps=4 format=3 uid="uid://dn8lak8y72t7b"]
 
 [ext_resource type="Script" path="res://scripts/menu_lose.gd" id="1_51k2r"]
 [ext_resource type="Theme" uid="uid://bbihf24146kch" path="res://new_theme.tres" id="1_wr0ic"]
+[ext_resource type="AudioStream" uid="uid://cqpns0qr5ycdj" path="res://sounds/game lose sound.wav" id="3_leagm"]
 
 [node name="Menu_Lose" type="Control"]
 layout_mode = 3
@@ -47,5 +48,9 @@ grow_vertical = 2
 theme = ExtResource("1_wr0ic")
 text = "menu"
 
-[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
+[node name="sfx_game_lose" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_leagm")
+volume_db = -10.0
+
 [connection signal="pressed" from="menu" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]

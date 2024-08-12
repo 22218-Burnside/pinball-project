@@ -11,6 +11,7 @@ func _on_start_button_pressed():
 
 func _on_options_button_pressed():
 	sfx_menu_click.play()
+	#on timeout():
 	get_tree().change_scene_to_file("res://scenes/menu_options.tscn")
 
 func _on_credits_button_pressed():

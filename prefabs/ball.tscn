@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjfpyv0s3dr06"]
+[gd_scene load_steps=6 format=3 uid="uid://bjfpyv0s3dr06"]
 
 [ext_resource type="PhysicsMaterial" uid="uid://bcyeyyv7m070s" path="res://scripts/ball.tres" id="1_8dd34"]
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_i07gp"]
 [ext_resource type="Texture2D" uid="uid://bpj7irfehnqcy" path="res://Sprites/New Piskel-1.png" id="1_se472"]
+[ext_resource type="AudioStream" uid="uid://dmtdr7vxdprlv" path="res://sounds/PADDLE HITTING PING PONG BAL.mp3" id="4_p0ue3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bogwd"]
 radius = 51.6769
@@ -26,4 +27,8 @@ texture = ExtResource("1_se472")
 position = Vector2(44.5, 44.5)
 shape = SubResource("CircleShape2D_bogwd")
 
+[node name="sfx_flipper_hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_p0ue3")
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

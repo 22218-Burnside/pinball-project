@@ -1,5 +1,5 @@
 extends Node2D
-
+class_name flipper
 # code for controls that allow the player to move the flipper. 
 func _physics_process(delta):
 	if Input.is_action_pressed("flipper left"):

@@ -39,12 +39,12 @@ scale = Vector2(6.25, 0.121094)
 position = Vector2(541, 85)
 
 [node name="flipper right" parent="." instance=ExtResource("4_1jrjh")]
-position = Vector2(614, 556)
+position = Vector2(646, 556)
 rotation = -0.00397421
 scale = Vector2(0.7, 1)
 
 [node name="flipper left" parent="." instance=ExtResource("5_0j7uo")]
-position = Vector2(153, 557)
+position = Vector2(125, 557)
 rotation = -3.14159
 
 [node name="trigger" parent="." instance=ExtResource("7_t7ivu")]
@@ -63,7 +63,7 @@ scale = Vector2(0.639998, 0.639998)
 layout_mode = 3
 anchors_preset = 0
 offset_left = 708.0
-offset_top = 23.0
+offset_top = 33.0
 offset_right = 799.0
 offset_bottom = 77.0
 theme = ExtResource("8_2r820")
@@ -82,3 +82,5 @@ offset_bottom = -4.0
 grow_horizontal = 0
 grow_vertical = 2
 text = "000"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="game_ui"]
