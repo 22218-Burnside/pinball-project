@@ -10,3 +10,7 @@ func _physics_process(delta):
 			rotation_degrees = -250 * delta
 		elif rotation_degrees < 200:
 			rotation_degrees = 200
+
+
+#initial velocity
+#no gravity#
