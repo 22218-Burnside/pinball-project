@@ -19,6 +19,7 @@ config/icon="res://Sprites/icon.svg"
 
 TriggerScore="*res://scripts/trigger_SCORE.gd"
 Game="*res://scripts/game.gd"
+MenuOptions="*res://scripts/menu_options.gd"
 
 [display]
 

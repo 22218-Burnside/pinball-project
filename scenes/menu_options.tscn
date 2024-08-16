@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://dhcencyemcffg"]
+[gd_scene load_steps=3 format=3 uid="uid://dhcencyemcffg"]
+
+[ext_resource type="Script" path="res://scripts/menu_options.gd" id="1_i4fly"]
+[ext_resource type="AudioStream" uid="uid://bxbgpbwjcdhws" path="res://sounds/menu click.wav" id="2_knkfk"]
 
 [node name="Menu_Options" type="Control"]
 layout_mode = 3
@@ -9,6 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
+script = ExtResource("1_i4fly")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -25,14 +29,35 @@ theme_override_constants/margin_bottom = 12
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Options menu label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 0
 theme_override_font_sizes/font_size = 30
 text = "Options
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="button menu" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="volume_Identifier" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Volume"
+
+[node name="Volume" type="HSlider" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Volume_Mute" type="CheckBox" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Mute Sound
+"
+
+[node name="menu" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
 text = "EXIT"
+
+[node name="sfx menu click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_knkfk")
+
+[connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/Volume_Mute" to="." method="_on_volume_mute_toggled"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/menu" to="." method="_on_menu_pressed"]
