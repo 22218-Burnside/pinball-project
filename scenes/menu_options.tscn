@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhcencyemcffg"]
+[gd_scene load_steps=4 format=3 uid="uid://dhcencyemcffg"]
 
 [ext_resource type="Script" path="res://scripts/menu_options.gd" id="1_i4fly"]
 [ext_resource type="AudioStream" uid="uid://bxbgpbwjcdhws" path="res://sounds/menu click.wav" id="2_knkfk"]
+
+[sub_resource type="SystemFont" id="SystemFont_2bk4o"]
 
 [node name="Menu_Options" type="Control"]
 layout_mode = 3
@@ -40,7 +42,9 @@ vertical_alignment = 1
 
 [node name="volume_Identifier" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Volume"
+theme_override_fonts/font = SubResource("SystemFont_2bk4o")
+text = "Master Volume
+"
 
 [node name="Volume" type="HSlider" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
