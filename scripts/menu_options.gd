@@ -10,3 +10,7 @@ func _on_volume_value_changed(value):
 
 func _on_volume_mute_toggled(toggled_on):
 	AudioServer.set_bus_mute(0,toggled_on)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 945d01d8df9f6056b31b6f6ac27e0ea2e1a00299
