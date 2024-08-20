@@ -15,7 +15,7 @@ position = Vector2(541, 85)
 
 [node name="flipper" parent="." instance=ExtResource("4_1jrjh")]
 position = Vector2(646, 556)
-rotation = -0.00397421
+scale = Vector2(3, 3)
 
 [node name="trigger" parent="." instance=ExtResource("7_t7ivu")]
 position = Vector2(403, 273)
