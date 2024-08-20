@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkl3j8h0m2aqt"]
+
+[ext_resource type="Script" path="res://Pinball/Scripts/ball.gd" id="1_eebec"]
+[ext_resource type="Texture2D" uid="uid://bmxgh5uh5qyfj" path="res://Sprites/icon.svg" id="2_6smxf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_afx4j"]
+radius = 17.1172
+
+[node name="ball" type="CharacterBody2D"]
+script = ExtResource("1_eebec")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_6smxf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_afx4j")

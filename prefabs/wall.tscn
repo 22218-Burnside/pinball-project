@@ -1,17 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhep74gkvy2"]
+[gd_scene load_steps=3 format=3 uid="uid://bt65owvixofrv"]
 
-[ext_resource type="Texture2D" uid="uid://hwcxg0aq4chm" path="res://Sprites/icon.svg" id="1_rcqgw"]
+[ext_resource type="Texture2D" uid="uid://dek6ubatolv62" path="res://Sprites/trigger active.png" id="1_tey73"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2igb"]
-size = Vector2(125.023, 128.679)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nbxd0"]
+size = Vector2(30, 30)
 
-[node name="Sprite2D" type="Sprite2D"]
-position = Vector2(3.5, 313)
-scale = Vector2(0.335938, 5.89063)
-texture = ExtResource("1_rcqgw")
+[node name="Wall" type="StaticBody2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tey73")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-1.48837, 0)
-shape = SubResource("RectangleShape2D_u2igb")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_nbxd0")

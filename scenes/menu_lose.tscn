@@ -51,5 +51,20 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "000"
 
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -98.5
+offset_right = 60.0
+offset_bottom = -53.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "You lost!"
+
 [connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="menu" to="." method="_on_button_pressed"]
