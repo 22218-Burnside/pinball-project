@@ -19,6 +19,7 @@ config/features=PackedStringArray("4.2", "Forward Plus")
 TriggerScore="*res://scripts/trigger_SCORE.gd"
 Game="*res://scripts/game.gd"
 MenuOptions="*res://scripts/menu_options.gd"
+GlobalSingleton="*res://global_singleton.gd"
 
 [display]
 

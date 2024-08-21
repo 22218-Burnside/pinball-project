@@ -1,7 +1,8 @@
 extends Node2D
 var score = 0
 
-
-func add_score(add:int):
-	score+=add
-	$game_ui/score_Label.text=str(score)
+func _process(delta):
+	$score_label.text = str(GlobalSingleton.score)
+	
+func add_score(points):
+	GlobalSingleton.add_score(points)

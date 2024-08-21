@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bkl3j8h0m2aqt" path="res://Pinball/Prefabs/ball.tscn" id="1_p40qp"]
 [ext_resource type="PackedScene" uid="uid://bw17fyon10e7g" path="res://Pinball/Prefabs/bat.tscn" id="2_vetbr"]
 [ext_resource type="PackedScene" uid="uid://bieqbvuutyss7" path="res://Pinball/Prefabs/block.tscn" id="3_bvj3g"]
-[ext_resource type="PackedScene" uid="uid://bt65owvixofrv" path="res://prefabs/wall.tscn" id="4_d8yqb"]
+[ext_resource type="PackedScene" uid="uid://d1kc84fxggvlq" path="res://scenes/prefab_wall.tscn" id="5_vua2i"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_i0k2m")
@@ -17,22 +17,6 @@ position = Vector2(400, 550)
 
 [node name="block" parent="." instance=ExtResource("3_bvj3g")]
 position = Vector2(371, 73)
-
-[node name="Wall" parent="." instance=ExtResource("4_d8yqb")]
-position = Vector2(-1, 316)
-scale = Vector2(2, 25)
-
-[node name="Wall2" parent="." instance=ExtResource("4_d8yqb")]
-position = Vector2(805, 312)
-scale = Vector2(2, 25)
-
-[node name="Wall3" parent="." instance=ExtResource("4_d8yqb")]
-position = Vector2(103, -1)
-scale = Vector2(12, 2)
-
-[node name="Wall5" parent="." instance=ExtResource("4_d8yqb")]
-position = Vector2(695, -2)
-scale = Vector2(12, 2)
 
 [node name="block2" parent="." instance=ExtResource("3_bvj3g")]
 position = Vector2(274, 74)
@@ -67,9 +51,25 @@ position = Vector2(368, 150)
 [node name="block12" parent="." instance=ExtResource("3_bvj3g")]
 position = Vector2(646, 151)
 
-[node name="score_Label" type="Label" parent="."]
+[node name="score_label" type="Label" parent="."]
 offset_left = 47.0
 offset_top = 44.0
 offset_right = 87.0
 offset_bottom = 67.0
 text = "000"
+
+[node name="prefab_wall" parent="." instance=ExtResource("5_vua2i")]
+position = Vector2(151, 0)
+scale = Vector2(10, 2)
+
+[node name="prefab_wall2" parent="." instance=ExtResource("5_vua2i")]
+position = Vector2(666, 0)
+scale = Vector2(10, 2)
+
+[node name="prefab_wall3" parent="." instance=ExtResource("5_vua2i")]
+position = Vector2(-7, 309)
+scale = Vector2(2, 24)
+
+[node name="prefab_wall4" parent="." instance=ExtResource("5_vua2i")]
+position = Vector2(804, 320)
+scale = Vector2(2, 24)

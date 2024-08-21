@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1kc84fxggvlq"]
+
+[ext_resource type="Texture2D" uid="uid://dek6ubatolv62" path="res://Sprites/trigger active.png" id="1_jj0it"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h7ngf"]
+size = Vector2(30, 30)
+
+[node name="prefab_wall" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_h7ngf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jj0it")
