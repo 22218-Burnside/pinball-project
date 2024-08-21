@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name Ball
 
 var speed := 150
-
+signal add_score
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 			velocity += velocity.normalized() * 20
 		if other is Block:
 			#TODO send ginal to update score?
-			
+			add_score.emit()
 			other.queue_free()
 	if position.y >= 700:
 		get_tree().change_scene_to_file("res://scenes/menu_lose.tscn")
