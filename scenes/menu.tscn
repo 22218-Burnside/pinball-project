@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cejv14iy5pgc8"]
+[gd_scene load_steps=3 format=3 uid="uid://cejv14iy5pgc8"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_st8f2"]
-[ext_resource type="Theme" uid="uid://bbihf24146kch" path="res://new_theme.tres" id="3_xvs2l"]
-[ext_resource type="AudioStream" uid="uid://bod6uw02gonap" path="res://sounds/menu click sound.mp3" id="4_odfb0"]
+[ext_resource type="AudioStream" uid="uid://bod6uw02gonap" path="res://sounds/sfx_menu_click.mp3" id="4_odfb0"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -28,7 +27,6 @@ grow_vertical = 0
 
 [node name="start button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("3_xvs2l")
 text = "Start"
 
 [node name="sfx menu click" type="AudioStreamPlayer" parent="."]

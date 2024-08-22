@@ -5,9 +5,7 @@ var points_game_final: Label
 
 
 func _ready():
-	# game crashes when scene to swapped, due to this code. Possibility of it breaking
-	# is because the globalsingleton to track the score is not set up yet.
-	label.text = str(GlobalSingleton.score)
+	label.text = ("Final score: ") + str(GlobalSingleton.score)
 	sfx_game_lose.play()
 
 

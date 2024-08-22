@@ -6,7 +6,7 @@ func _ready():
 
 
 func _process(delta):
-	$score_label.text = str(GlobalSingleton.score)
+	$score_label.text = ("Score: ") + str(GlobalSingleton.score)
 
 
 func _on_ball_add_score():

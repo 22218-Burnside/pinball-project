@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dn8lak8y72t7b"]
+[gd_scene load_steps=3 format=3 uid="uid://dn8lak8y72t7b"]
 
 [ext_resource type="Script" path="res://scripts/menu_lose.gd" id="1_51k2r"]
-[ext_resource type="Theme" uid="uid://bbihf24146kch" path="res://new_theme.tres" id="1_wr0ic"]
-[ext_resource type="AudioStream" uid="uid://cqpns0qr5ycdj" path="res://sounds/game lose sound.wav" id="3_leagm"]
+[ext_resource type="AudioStream" uid="uid://cqpns0qr5ycdj" path="res://sounds/sfx_game_lose.wav" id="3_leagm"]
 
 [node name="Menu_Lose" type="Control"]
 layout_mode = 3
@@ -24,12 +23,12 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -55.0
-offset_top = -110.0
-offset_right = 55.0
+offset_left = -70.0
+offset_top = -200.0
+offset_right = 40.0
+offset_bottom = -90.0
 grow_horizontal = 2
 grow_vertical = 0
-theme = ExtResource("1_wr0ic")
 text = "menu"
 
 [node name="sfx_game_lose" type="AudioStreamPlayer" parent="."]
@@ -55,10 +54,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -32.0
-offset_top = -20.0
-offset_right = 88.0
-offset_bottom = 25.0
+offset_left = -60.0
+offset_top = -22.5
+offset_right = 60.0
+offset_bottom = 22.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "You lost!"
