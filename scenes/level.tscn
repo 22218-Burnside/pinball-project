@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cpht55eomw74t"]
+[gd_scene load_steps=7 format=3 uid="uid://cpht55eomw74t"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_i0k2m"]
 [ext_resource type="PackedScene" uid="uid://bkl3j8h0m2aqt" path="res://Pinball/Prefabs/ball.tscn" id="1_p40qp"]
@@ -6,11 +6,22 @@
 [ext_resource type="PackedScene" uid="uid://bieqbvuutyss7" path="res://Pinball/Prefabs/block.tscn" id="3_bvj3g"]
 [ext_resource type="PackedScene" uid="uid://d1kc84fxggvlq" path="res://scenes/prefab_wall.tscn" id="5_vua2i"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gdrsd"]
+size = Vector2(810.5, 20)
+
 [node name="Level" type="Node2D"]
 script = ExtResource("1_i0k2m")
 
+[node name="score_label" type="Label" parent="."]
+offset_left = 47.0
+offset_top = 44.0
+offset_right = 87.0
+offset_bottom = 67.0
+text = "000"
+metadata/_edit_use_anchors_ = true
+
 [node name="ball" parent="." instance=ExtResource("1_p40qp")]
-position = Vector2(381, 296)
+position = Vector2(401, 234)
 
 [node name="bat" parent="." instance=ExtResource("2_vetbr")]
 position = Vector2(400, 550)
@@ -51,14 +62,6 @@ position = Vector2(368, 150)
 [node name="block12" parent="." instance=ExtResource("3_bvj3g")]
 position = Vector2(646, 151)
 
-[node name="score_label" type="Label" parent="."]
-offset_left = 47.0
-offset_top = 44.0
-offset_right = 87.0
-offset_bottom = 67.0
-text = "000"
-metadata/_edit_use_anchors_ = true
-
 [node name="wall_top_left" parent="." instance=ExtResource("5_vua2i")]
 position = Vector2(151, 0)
 scale = Vector2(10, 2)
@@ -74,5 +77,137 @@ scale = Vector2(2, 24)
 [node name="wall_right" parent="." instance=ExtResource("5_vua2i")]
 position = Vector2(804, 320)
 scale = Vector2(2, 24)
+
+[node name="score_label2" type="Label" parent="."]
+offset_left = 47.0
+offset_top = -928.0
+offset_right = 87.0
+offset_bottom = -905.0
+text = "000"
+metadata/_edit_use_anchors_ = true
+
+[node name="bat2" parent="." instance=ExtResource("2_vetbr")]
+position = Vector2(406, -422)
+
+[node name="wall_top_left2" parent="." instance=ExtResource("5_vua2i")]
+position = Vector2(151, -972)
+scale = Vector2(10, 2)
+
+[node name="wall_top_right2" parent="." instance=ExtResource("5_vua2i")]
+position = Vector2(666, -972)
+scale = Vector2(10, 2)
+
+[node name="wall_left2" parent="." instance=ExtResource("5_vua2i")]
+position = Vector2(-7, -609)
+scale = Vector2(2, 24)
+
+[node name="wall_right2" parent="." instance=ExtResource("5_vua2i")]
+position = Vector2(804, -609)
+scale = Vector2(2, 24)
+
+[node name="block13" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(368, -877)
+
+[node name="block14" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(281, -877)
+
+[node name="block15" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(555, -877)
+
+[node name="block16" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(646, -877)
+
+[node name="block17" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(463, -877)
+
+[node name="block18" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(185, -877)
+
+[node name="block19" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(281, -804)
+
+[node name="block20" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(184, -804)
+
+[node name="block21" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(463, -804)
+
+[node name="block22" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(555, -804)
+
+[node name="block23" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(368, -804)
+
+[node name="block24" parent="." instance=ExtResource("3_bvj3g")]
+position = Vector2(646, -803)
+
+[node name="score_label2" type="Label" parent="block24"]
+offset_left = -599.0
+offset_top = -1072.0
+offset_right = -559.0
+offset_bottom = -1049.0
+text = "000"
+metadata/_edit_use_anchors_ = true
+
+[node name="bat2" parent="block24" instance=ExtResource("2_vetbr")]
+position = Vector2(-240, -566)
+
+[node name="wall_top_left2" parent="block24" instance=ExtResource("5_vua2i")]
+position = Vector2(-495, -1116)
+scale = Vector2(10, 2)
+
+[node name="wall_top_right2" parent="block24" instance=ExtResource("5_vua2i")]
+position = Vector2(20, -1116)
+scale = Vector2(10, 2)
+
+[node name="wall_left2" parent="block24" instance=ExtResource("5_vua2i")]
+position = Vector2(-653, -809)
+scale = Vector2(2, 24)
+
+[node name="wall_right2" parent="block24" instance=ExtResource("5_vua2i")]
+position = Vector2(158, -809)
+scale = Vector2(2, 24)
+
+[node name="block13" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-278, -1021)
+
+[node name="block14" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-365, -1021)
+
+[node name="block15" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-91, -1021)
+
+[node name="block16" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(0, -1021)
+
+[node name="block17" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-183, -1021)
+
+[node name="block18" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-461, -1021)
+
+[node name="block19" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-365, -948)
+
+[node name="block20" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-462, -948)
+
+[node name="block21" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-183, -948)
+
+[node name="block22" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-91, -948)
+
+[node name="block23" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(-278, -948)
+
+[node name="block24" parent="block24" instance=ExtResource("3_bvj3g")]
+position = Vector2(0, -947)
+
+[node name="area change 1" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area change 1"]
+position = Vector2(412.5, 14)
+shape = SubResource("RectangleShape2D_gdrsd")
 
 [connection signal="add_score" from="ball" to="." method="_on_ball_add_score"]

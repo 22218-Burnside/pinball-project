@@ -36,7 +36,7 @@ func _process(delta: float) -> void:
 			wall_hit.play()
 	if position.y >= 700:
 		get_tree().change_scene_to_file("res://scenes/menu_lose.tscn")
-	if position.y <= -30:
+	if position.y <= -1110:
 		get_tree().change_scene_to_file("res://scenes/menu_win.tscn")
 
 func get_random_velocity() -> Vector2:
