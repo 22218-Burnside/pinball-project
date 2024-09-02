@@ -24,10 +24,14 @@ func _process(delta: float) -> void:
 		print(other.name)
 		if other is Bat:
 			#add 20 to speed of ball
-			velocity += velocity.normalized() * 20
+			velocity += velocity.normalized() * 75
 			paddle_hit.play()
 		if other is Block:
 			#TODO send ginal to update score?
+			add_score.emit()
+			other.queue_free()
+			block_hit.play()
+		if other is Diamond:
 			add_score.emit()
 			other.queue_free()
 			block_hit.play()
@@ -36,7 +40,7 @@ func _process(delta: float) -> void:
 			wall_hit.play()
 	if position.y >= 700:
 		get_tree().change_scene_to_file("res://scenes/menu_lose.tscn")
-	if position.y <= -1110:
+	if position.y <= -600:
 		get_tree().change_scene_to_file("res://scenes/menu_win.tscn")
 
 func get_random_velocity() -> Vector2:

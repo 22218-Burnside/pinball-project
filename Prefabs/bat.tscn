@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bw17fyon10e7g"]
 
-[ext_resource type="Script" path="res://Pinball/Scripts/bat.gd" id="1_52143"]
+[ext_resource type="Script" path="res://scripts/bat.gd" id="1_52143"]
 [ext_resource type="Texture2D" uid="uid://tqor8bkseebr" path="res://Sprites/kenney_puzzle-pack/png/paddleBlu.png" id="2_5csba"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w0vi1"]

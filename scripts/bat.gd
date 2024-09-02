@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name Bat
 
 
-var speed = 200
+var speed = 500
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,4 +19,3 @@ func _process(delta: float) -> void:
 		velocity.x += speed * delta
 	var collision = move_and_collide(velocity)
 	
-

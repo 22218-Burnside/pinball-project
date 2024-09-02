@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bieqbvuutyss7"]
 
-[ext_resource type="Script" path="res://Pinball/Scripts/block.gd" id="1_rh5ix"]
+[ext_resource type="Script" path="res://scripts/block.gd" id="1_rh5ix"]
 [ext_resource type="Texture2D" uid="uid://dgni6v0kxhgwf" path="res://Sprites/kenney_puzzle-pack/png/element_green_square_glossy.png" id="2_bicqs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3wqa6"]

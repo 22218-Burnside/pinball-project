@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://bnfcck2vhd0al"]
 
-[ext_resource type="PackedScene" uid="uid://bkl3j8h0m2aqt" path="res://Pinball/Prefabs/ball.tscn" id="1_skxli"]
+[ext_resource type="PackedScene" uid="uid://bkl3j8h0m2aqt" path="res://Prefabs/ball.tscn" id="1_skxli"]
 [ext_resource type="Texture2D" uid="uid://bmxgh5uh5qyfj" path="res://Sprites/sprint 1/icon.svg" id="2_mdali"]
-[ext_resource type="PackedScene" uid="uid://bw17fyon10e7g" path="res://Pinball/Prefabs/bat.tscn" id="2_yd0ru"]
-[ext_resource type="PackedScene" uid="uid://bieqbvuutyss7" path="res://Pinball/Prefabs/block.tscn" id="4_o4jv3"]
+[ext_resource type="PackedScene" uid="uid://bw17fyon10e7g" path="res://Prefabs/bat.tscn" id="2_yd0ru"]
+[ext_resource type="PackedScene" uid="uid://bieqbvuutyss7" path="res://Prefabs/block.tscn" id="4_o4jv3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_edn81"]
 size = Vector2(1152, 40)

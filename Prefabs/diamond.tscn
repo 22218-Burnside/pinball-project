@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5ebm08jhgvxo"]
+
+[ext_resource type="Script" path="res://scripts/diamond.gd" id="1_hgxb7"]
+[ext_resource type="Texture2D" uid="uid://w38sk7gkk8yo" path="res://Sprites/kenney_puzzle-pack/png/element_red_diamond_glossy.png" id="2_ra18b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nnp6v"]
+radius = 18.0
+
+[node name="Diamond" type="StaticBody2D"]
+script = ExtResource("1_hgxb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nnp6v")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture = ExtResource("2_ra18b")
