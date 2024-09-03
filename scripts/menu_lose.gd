@@ -9,5 +9,9 @@ func _ready():
 	sfx_game_lose.play()
 
 
-func _on_menu_pressed():
+func _on_menu_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+
+
+func _on_quit_button_pressed():
+	get_tree().quit()
