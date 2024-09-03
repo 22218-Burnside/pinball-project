@@ -24,7 +24,7 @@ func _process(delta: float) -> void:
 		print(other.name)
 		if other is Bat:
 			#add 20 to speed of ball
-			velocity += velocity.normalized() * 75
+			velocity += velocity.normalized() * 50
 			paddle_hit.play()
 		if other is Block:
 			#TODO send ginal to update score?
