@@ -1,0 +1,30 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://i4po48cav6nf"]
+
+[ext_resource type="Texture2D" uid="uid://day2pqf2qh3wo" path="res://Sprites/kenney_puzzle-pack/png/element_purple_cube_glossy.png" id="1_fe0t3"]
+[ext_resource type="Texture2D" uid="uid://dgni6v0kxhgwf" path="res://Sprites/kenney_puzzle-pack/png/element_green_square_glossy.png" id="2_vblhj"]
+[ext_resource type="Texture2D" uid="uid://3f7ajtc75auq" path="res://Sprites/kenney_puzzle-pack/png/element_grey_square_glossy.png" id="3_wnsba"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iw3xn"]
+texture = ExtResource("1_fe0t3")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t4wh8"]
+texture = ExtResource("2_vblhj")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g4frt"]
+texture = ExtResource("3_wnsba")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_iw3xn")
+sources/2 = SubResource("TileSetAtlasSource_t4wh8")
+sources/3 = SubResource("TileSetAtlasSource_g4frt")
