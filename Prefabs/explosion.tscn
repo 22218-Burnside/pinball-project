@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://036xab1ibei" path="res://Sprites/kenney_puzzle-pack/png/particleStar.png" id="1_e676a"]
 
 [sub_resource type="Gradient" id="Gradient_la3he"]
-colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+offsets = PackedFloat32Array(0, 0.7, 1)
+colors = PackedColorArray(0.513233, 0.513233, 0.513233, 1, 1, 1, 1, 1, 1, 1, 1, 0.321569)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_si356"]
 gradient = SubResource("Gradient_la3he")

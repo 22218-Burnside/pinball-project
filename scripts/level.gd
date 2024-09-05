@@ -14,6 +14,7 @@ func _process(delta):
 func _on_ball_add_score():
 	GlobalSingleton.add_score(10)
 
+
 #region Camera changing area scripts
 # These scripts make the ball go up
 func _on_area_change_up_body_entered(body: Node2D) -> void:
