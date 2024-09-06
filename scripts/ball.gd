@@ -3,6 +3,7 @@ class_name Ball
 @onready var paddle_hit = $paddle_hit
 @onready var block_hit = $block_hit
 @onready var wall_hit = $wall_hit
+@onready var explosion = preload("res://Prefabs/explosion.tscn")
 
 var speed := 150
 signal add_score
@@ -25,7 +26,14 @@ func _process(delta: float) -> void:
 		if other is Bat:
 			#add 20 to speed of ball
 			velocity += velocity.normalized() * 50
+			velocity = velocity.clampf(0,500)
 			paddle_hit.play()
+			#add a little bias to the ball bounce
+			var offset = other.global_position.x - global_position.x
+			if offset > 0:
+				velocity = velocity.rotated(rad_to_deg(10))
+			else:
+				velocity = velocity.rotated(rad_to_deg(-10))
 		if other is Block:
 			#TODO send ginal to update score?
 			add_score.emit()
