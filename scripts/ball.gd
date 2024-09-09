@@ -3,7 +3,8 @@ class_name Ball
 @onready var paddle_hit = $paddle_hit
 @onready var block_hit = $block_hit
 @onready var wall_hit = $wall_hit
-@onready var explosion = preload("res://Prefabs/explosion.tscn")
+@onready var explosion_prefab = preload("res://Prefabs/explosion.tscn")
+
 
 var speed := 150
 signal add_score
@@ -19,33 +20,42 @@ func _process(delta: float) -> void:
 	if collision:
 		#bounce!
 		velocity = velocity.bounce(collision.get_normal())
-		velocity = velocity.rotated(randf_range(-0.1,0.1))
+		#velocity = velocity.rotated(randf_range(-0.1,0.1))
 		#TODO- check the thing we bounce against?
 		var other = collision.get_collider()
 		print(other.name)
 		if other is Bat:
 			#add 20 to speed of ball
-			velocity += velocity.normalized() * 50
-			velocity = velocity.clampf(0,500)
+			velocity += velocity.normalized() * 5
+			#velocity = velocity.clampf(0,500)
 			paddle_hit.play()
 			#add a little bias to the ball bounce
 			var offset = other.global_position.x - global_position.x
+			print(offset)
 			if offset > 0:
-				velocity = velocity.rotated(rad_to_deg(10))
+				velocity = velocity.rotated(deg_to_rad(-10))
 			else:
-				velocity = velocity.rotated(rad_to_deg(-10))
+				velocity = velocity.rotated(deg_to_rad(10))
 		if other is Block:
 			#TODO send ginal to update score?
 			add_score.emit()
+			var EXPLOSION = explosion_prefab.instantiate()
+			EXPLOSION.position = position
+			get_parent().add_child(EXPLOSION)
 			other.queue_free()
 			block_hit.play()
 		if other is Diamond:
 			add_score.emit()
+			var EXPLOSION = explosion_prefab.instantiate()
+			EXPLOSION.position = position
+			get_parent().add_child(EXPLOSION)
 			other.queue_free()
 			block_hit.play()
 		else:
 			pass
 			wall_hit.play()
+			var EXPLOSION = explosion_prefab.instantiate()
+			EXPLOSION.position = position
 	if position.y >= 700:
 		get_tree().change_scene_to_file("res://scenes/menu_lose.tscn")
 	if position.y <= -1346:

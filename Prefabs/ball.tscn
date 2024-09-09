@@ -21,14 +21,11 @@ texture = ExtResource("2_p1mky")
 
 [node name="paddle_hit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_2qkiv")
-volume_db = -16.0
 
 [node name="block_hit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_y1qm0")
-volume_db = -10.0
 
 [node name="wall_hit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_y1qm0")
-volume_db = -10.0
 
 [connection signal="add_score" from="." to="." method="_on_add_score"]
