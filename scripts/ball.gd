@@ -8,6 +8,7 @@ class_name Ball
 
 var speed := 150
 signal add_score
+signal camera_shake
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,6 +19,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var collision = move_and_collide(velocity * delta)
 	if collision:
+		#emits signal to the camera for shake
+		camera_shake.emit()
 		#bounce!
 		velocity = velocity.bounce(collision.get_normal())
 		#velocity = velocity.rotated(randf_range(-0.1,0.1))

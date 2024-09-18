@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://cpht55eomw74t"]
+[gd_scene load_steps=11 format=4 uid="uid://cpht55eomw74t"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_i0k2m"]
 [ext_resource type="PackedScene" uid="uid://bkl3j8h0m2aqt" path="res://Prefabs/ball.tscn" id="1_p40qp"]
 [ext_resource type="TileSet" uid="uid://i4po48cav6nf" path="res://tile set for the walls.tres" id="2_6m5y6"]
 [ext_resource type="PackedScene" uid="uid://bw17fyon10e7g" path="res://Prefabs/bat.tscn" id="2_vetbr"]
 [ext_resource type="PackedScene" uid="uid://bieqbvuutyss7" path="res://Prefabs/block.tscn" id="3_bvj3g"]
+[ext_resource type="Script" path="res://scripts/ball_camera.gd" id="4_p8jpm"]
 [ext_resource type="PackedScene" uid="uid://c5ebm08jhgvxo" path="res://Prefabs/diamond.tscn" id="6_4lokb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gdrsd"]
@@ -32,6 +33,7 @@ limit_top = 0
 limit_right = 800
 limit_bottom = 600
 position_smoothing_enabled = true
+script = ExtResource("4_p8jpm")
 
 [node name="score_label" type="Label" parent="."]
 offset_left = 78.0
@@ -163,6 +165,8 @@ position = Vector2(400, -791)
 shape = SubResource("RectangleShape2D_tudc1")
 
 [connection signal="add_score" from="ball" to="." method="_on_ball_add_score"]
+[connection signal="camera_shake" from="ball" to="." method="_on_ball_camera_shake"]
+[connection signal="camera_shake" from="ball" to="ball/ball_camera" method="_on_ball_camera_shake"]
 [connection signal="area_entered" from="area change up" to="." method="_on_area_change_up_area_entered"]
 [connection signal="body_entered" from="area change up" to="." method="_on_area_change_up_body_entered"]
 [connection signal="body_entered" from="area change down2" to="." method="_on_area_change_down_2_body_entered"]
