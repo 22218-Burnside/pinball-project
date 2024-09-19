@@ -29,7 +29,7 @@ func _process(delta: float) -> void:
 		print(other.name)
 		if other is Bat:
 			#add 20 to speed of ball
-			velocity += velocity.normalized() * 5
+			velocity += velocity.normalized() * 50
 			#velocity = velocity.clampf(0,500)
 			paddle_hit.play()
 			#add a little bias to the ball bounce
