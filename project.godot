@@ -76,4 +76,4 @@ rapier/solver/num_iterations=16
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-environment/defaults/default_clear_color=Color(0.521569, 0.67451, 0.156863, 1)
+environment/defaults/default_clear_color=Color(0.415686, 0.537255, 0.129412, 1)
