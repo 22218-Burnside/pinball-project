@@ -5,10 +5,10 @@ class_name Ball
 @onready var wall_hit = $wall_hit
 @onready var explosion_prefab = preload("res://Prefabs/explosion.tscn")
 
-
 var speed := 150
 signal add_score
 signal camera_shake
+signal pitch_change
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -22,6 +22,8 @@ func _process(delta: float) -> void:
 		#emits signal to the camera for shake
 		camera_shake.emit()
 		#bounce!
+		$wall_hit.pitch_scale += $wall_hit.pitch_scale + 0.1
+		#clamp values
 		velocity = velocity.bounce(collision.get_normal())
 		#velocity = velocity.rotated(randf_range(-0.1,0.1))
 		#TODO- check the thing we bounce against?
@@ -29,7 +31,7 @@ func _process(delta: float) -> void:
 		print(other.name)
 		if other is Bat:
 			#add 20 to speed of ball
-			velocity += velocity.normalized() * 50
+			velocity += velocity.normalized() * 25
 			#velocity = velocity.clampf(0,500)
 			paddle_hit.play()
 			#add a little bias to the ball bounce
@@ -47,6 +49,7 @@ func _process(delta: float) -> void:
 			get_parent().add_child(EXPLOSION)
 			other.queue_free()
 			block_hit.play()
+			$block_hit.pitch_scale += $block_hit.pitch_scale + 0.1
 		if other is Diamond:
 			add_score.emit()
 			var EXPLOSION = explosion_prefab.instantiate()
@@ -54,6 +57,7 @@ func _process(delta: float) -> void:
 			get_parent().add_child(EXPLOSION)
 			other.queue_free()
 			block_hit.play()
+			$block_hit.pitch_scale += $block_hit.pitch_scale + 0.1
 		else:
 			pass
 			wall_hit.play()

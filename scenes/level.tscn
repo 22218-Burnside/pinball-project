@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=4 uid="uid://cpht55eomw74t"]
+[gd_scene load_steps=12 format=4 uid="uid://cpht55eomw74t"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_i0k2m"]
 [ext_resource type="PackedScene" uid="uid://bkl3j8h0m2aqt" path="res://Prefabs/ball.tscn" id="1_p40qp"]
+[ext_resource type="Texture2D" uid="uid://74i65x3v64bk" path="res://Sprites/white arrow up.png" id="2_3q5t7"]
 [ext_resource type="TileSet" uid="uid://i4po48cav6nf" path="res://tile set for the walls.tres" id="2_6m5y6"]
 [ext_resource type="PackedScene" uid="uid://bw17fyon10e7g" path="res://Prefabs/bat.tscn" id="2_vetbr"]
 [ext_resource type="PackedScene" uid="uid://bieqbvuutyss7" path="res://Prefabs/block.tscn" id="3_bvj3g"]
@@ -24,6 +25,145 @@ script = ExtResource("1_i0k2m")
 texture_filter = 1
 tile_map_data = PackedByteArray("AAAAABEAAQAAAAAAAAAAABIAAQAAAAAAAAAAABAAAQAAAAAAAAAAAA8AAQAAAAAAAAAAAA4AAQAAAAAAAAAAAA0AAQAAAAAAAAAAAAwAAQAAAAAAAAAAAAsAAQAAAAAAAAAAAAoAAQAAAAAAAAAAAAkAAQAAAAAAAAAAAAgAAQAAAAAAAAAAAAcAAQAAAAAAAAAAAAYAAQAAAAAAAAAAAAUAAQAAAAAAAAAAAAQAAQAAAAAAAAAAAAMAAQAAAAAAAAAAAAIAAQAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAQAAAAAAAAAIAAAAAQAAAAAAAAAHAAAAAQAAAAAAAAAGAAAAAQAAAAAAAAAFAAAAAQAAAAAAAAAEAAAAAQAAAAAAAAADAAAAAQAAAAAAAAACAAAAAQAAAAAAAAABAAAAAQAAAAAAAAAQAAAAAQAAAAAAAAAYAAAAAQAAAAAAAAAXAAAAAQAAAAAAAAAWAAAAAQAAAAAAAAAVAAAAAQAAAAAAAAAUAAAAAQAAAAAAAAATAAAAAQAAAAAAAAASAAAAAQAAAAAAAAARAAAAAQAAAAAAAAAYAAIAAQAAAAAAAAAYAAEAAQAAAAAAAAAYAAcAAQAAAAAAAAAYAAgAAQAAAAAAAAAYAAkAAQAAAAAAAAAYAAoAAQAAAAAAAAAYAAsAAQAAAAAAAAAYAAwAAQAAAAAAAAAYAA0AAQAAAAAAAAAYAA4AAQAAAAAAAAAYAA8AAQAAAAAAAAAYAAMAAQAAAAAAAAAYAAQAAQAAAAAAAAAYAAUAAQAAAAAAAAAYAAYAAQAAAAAAAAAYABAAAQAAAAAAAAAYABEAAQAAAAAAAAAYABIAAQAAAAAAAAABAAEAAQAAAAAAAAABAAIAAQAAAAAAAAACAAEAAQAAAAAAAAADAAEAAQAAAAAAAAAEAAEAAQAAAAAAAAAFAAEAAQAAAAAAAAAGAAEAAQAAAAAAAAAHAAEAAQAAAAAAAAAIAAEAAQAAAAAAAAABAAMAAQAAAAAAAAABAAQAAQAAAAAAAAABAAUAAQAAAAAAAAABABIAAQAAAAAAAAABABEAAQAAAAAAAAABABAAAQAAAAAAAAABAA8AAQAAAAAAAAABAA4AAQAAAAAAAAABAA0AAQAAAAAAAAABAAwAAQAAAAAAAAABAAsAAQAAAAAAAAABAAoAAQAAAAAAAAABAAkAAQAAAAAAAAABAAgAAQAAAAAAAAABAAYAAQAAAAAAAAABAAcAAQAAAAAAAAAQAAEAAQAAAAAAAAARAAEAAQAAAAAAAAASAAEAAQAAAAAAAAATAAEAAQAAAAAAAAAUAAEAAQAAAAAAAAAVAAEAAQAAAAAAAAAWAAEAAQAAAAAAAAAXAAEAAQAAAAAAAAAXAAIAAQAAAAAAAAAXAAMAAQAAAAAAAAAXAAQAAQAAAAAAAAAXAAUAAQAAAAAAAAAXAAYAAQAAAAAAAAAXAAcAAQAAAAAAAAAXAAgAAQAAAAAAAAAXAAkAAQAAAAAAAAAXAAoAAQAAAAAAAAAXAAsAAQAAAAAAAAAXAAwAAQAAAAAAAAAXAA0AAQAAAAAAAAAXAA4AAQAAAAAAAAAXAA8AAQAAAAAAAAAXABAAAQAAAAAAAAAXABEAAQAAAAAAAAAXABIAAQAAAAAAAAACAOv/AgAAAAAAAAAIAOv/AgAAAAAAAAAHAOv/AgAAAAAAAAAGAOv/AgAAAAAAAAAFAOv/AgAAAAAAAAAEAOv/AgAAAAAAAAADAOv/AgAAAAAAAAACAOz/AgAAAAAAAAADAOz/AgAAAAAAAAAEAOz/AgAAAAAAAAAFAOz/AgAAAAAAAAAGAOz/AgAAAAAAAAAHAOz/AgAAAAAAAAAIAOz/AgAAAAAAAAARAOv/AgAAAAAAAAASAOv/AgAAAAAAAAATAOv/AgAAAAAAAAAUAOv/AgAAAAAAAAAVAOv/AgAAAAAAAAAWAOv/AgAAAAAAAAAXAOv/AgAAAAAAAAAYAOv/AgAAAAAAAAARAOz/AgAAAAAAAAASAOz/AgAAAAAAAAATAOz/AgAAAAAAAAAUAOz/AgAAAAAAAAAVAOz/AgAAAAAAAAAWAOz/AgAAAAAAAAAXAOz/AgAAAAAAAAAYAOz/AgAAAAAAAAAYAO3/AgAAAAAAAAAYAO7/AgAAAAAAAAAYAO//AgAAAAAAAAAYAPD/AgAAAAAAAAAYAPH/AgAAAAAAAAAYAPL/AgAAAAAAAAAYAPP/AgAAAAAAAAAYAPT/AgAAAAAAAAAYAPX/AgAAAAAAAAAYAPb/AgAAAAAAAAAYAPf/AgAAAAAAAAAYAPj/AgAAAAAAAAAYAPn/AgAAAAAAAAAYAPr/AgAAAAAAAAAYAPv/AgAAAAAAAAAXAO3/AgAAAAAAAAAXAO7/AgAAAAAAAAAXAO//AgAAAAAAAAAXAPD/AgAAAAAAAAAXAPH/AgAAAAAAAAAXAPL/AgAAAAAAAAAXAPP/AgAAAAAAAAAXAPT/AgAAAAAAAAAXAPX/AgAAAAAAAAAXAPb/AgAAAAAAAAAXAPf/AgAAAAAAAAAXAPj/AgAAAAAAAAAXAPn/AgAAAAAAAAAXAPr/AgAAAAAAAAAXAPv/AgAAAAAAAAAQAOv/AgAAAAAAAAAQAOz/AgAAAAAAAAAAAOb/AwAAAAAAAAAAANv/AwAAAAAAAAAAANz/AwAAAAAAAAAAAN3/AwAAAAAAAAAAAN7/AwAAAAAAAAAAAN//AwAAAAAAAAAAAOD/AwAAAAAAAAAAAOH/AwAAAAAAAAAAAOL/AwAAAAAAAAAAAOP/AwAAAAAAAAAAAOT/AwAAAAAAAAAAAOX/AwAAAAAAAAABANv/AwAAAAAAAAABANz/AwAAAAAAAAABAN3/AwAAAAAAAAABAN7/AwAAAAAAAAABAN//AwAAAAAAAAABAOD/AwAAAAAAAAABAOH/AwAAAAAAAAABAOL/AwAAAAAAAAABAOP/AwAAAAAAAAABAOT/AwAAAAAAAAABAOX/AwAAAAAAAAABAOb/AwAAAAAAAAAAANr/AwAAAAAAAAABANr/AwAAAAAAAAAXANr/AwAAAAAAAAAXANv/AwAAAAAAAAAYANr/AwAAAAAAAAAYANv/AwAAAAAAAAAXANz/AwAAAAAAAAAXAN3/AwAAAAAAAAAYANz/AwAAAAAAAAAYAN3/AwAAAAAAAAAXAN7/AwAAAAAAAAAXAN//AwAAAAAAAAAYAN7/AwAAAAAAAAAYAN//AwAAAAAAAAAXAOD/AwAAAAAAAAAXAOH/AwAAAAAAAAAYAOD/AwAAAAAAAAAYAOH/AwAAAAAAAAAXAOL/AwAAAAAAAAAXAOP/AwAAAAAAAAAYAOL/AwAAAAAAAAAYAOP/AwAAAAAAAAAXAOT/AwAAAAAAAAAXAOX/AwAAAAAAAAAYAOT/AwAAAAAAAAAYAOX/AwAAAAAAAAAXAOb/AwAAAAAAAAAYAOb/AwAAAAAAAAAAAOv/AgAAAAAAAAAAAOz/AgAAAAAAAAAAAO3/AgAAAAAAAAAAAO7/AgAAAAAAAAAAAO//AgAAAAAAAAAAAPD/AgAAAAAAAAAAAPH/AgAAAAAAAAAAAPL/AgAAAAAAAAAAAPP/AgAAAAAAAAAAAPT/AgAAAAAAAAAAAPX/AgAAAAAAAAAAAPb/AgAAAAAAAAAAAPf/AgAAAAAAAAAAAPj/AgAAAAAAAAAAAPn/AgAAAAAAAAAAAPr/AgAAAAAAAAAAAPv/AgAAAAAAAAABAOv/AgAAAAAAAAABAOz/AgAAAAAAAAABAO3/AgAAAAAAAAABAO7/AgAAAAAAAAABAO//AgAAAAAAAAABAPD/AgAAAAAAAAABAPH/AgAAAAAAAAABAPL/AgAAAAAAAAABAPP/AgAAAAAAAAABAPT/AgAAAAAAAAABAPX/AgAAAAAAAAABAPb/AgAAAAAAAAABAPf/AgAAAAAAAAABAPj/AgAAAAAAAAABAPn/AgAAAAAAAAABAPr/AgAAAAAAAAABAPv/AgAAAAAAAAAAANb/AwAAAAAAAAAAANf/AwAAAAAAAAABANb/AwAAAAAAAAABANf/AwAAAAAAAAACANb/AwAAAAAAAAACANf/AwAAAAAAAAADANb/AwAAAAAAAAADANf/AwAAAAAAAAAEANb/AwAAAAAAAAAEANf/AwAAAAAAAAAFANb/AwAAAAAAAAAFANf/AwAAAAAAAAAGANb/AwAAAAAAAAAGANf/AwAAAAAAAAAHANb/AwAAAAAAAAAHANf/AwAAAAAAAAAIANb/AwAAAAAAAAAIANf/AwAAAAAAAAAQANb/AwAAAAAAAAAQANf/AwAAAAAAAAARANb/AwAAAAAAAAARANf/AwAAAAAAAAASANb/AwAAAAAAAAASANf/AwAAAAAAAAATANb/AwAAAAAAAAATANf/AwAAAAAAAAAUANb/AwAAAAAAAAAUANf/AwAAAAAAAAAVANb/AwAAAAAAAAAVANf/AwAAAAAAAAAWANb/AwAAAAAAAAAWANf/AwAAAAAAAAAXANb/AwAAAAAAAAAXANf/AwAAAAAAAAAYANb/AwAAAAAAAAAYANf/AwAAAAAAAAAXANj/AwAAAAAAAAAXANn/AwAAAAAAAAAYANj/AwAAAAAAAAAYANn/AwAAAAAAAAAAANj/AwAAAAAAAAAAANn/AwAAAAAAAAABANj/AwAAAAAAAAABANn/AwAAAAAAAAAAAPz/AgAAAAAAAAAAAP3/AgAAAAAAAAABAPz/AgAAAAAAAAABAP3/AgAAAAAAAAAXAPz/AgAAAAAAAAAYAPz/AgAAAAAAAAAYAP3/AgAAAAAAAAAXAP3/AgAAAAAAAAAAAOf/AwAAAAAAAAAAAOj/AwAAAAAAAAABAOj/AwAAAAAAAAABAOf/AwAAAAAAAAAXAOf/AwAAAAAAAAAYAOf/AwAAAAAAAAAYAOj/AwAAAAAAAAAXAOj/AwAAAAAAAAD//wAAAQAAAAAAAAD//wEAAQAAAAAAAAD//wIAAQAAAAAAAAD//wMAAQAAAAAAAAD//wQAAQAAAAAAAAD//wUAAQAAAAAAAAD//wYAAQAAAAAAAAD//wcAAQAAAAAAAAD//wgAAQAAAAAAAAD//wkAAQAAAAAAAAD//woAAQAAAAAAAAD//wsAAQAAAAAAAAD//wwAAQAAAAAAAAD//w0AAQAAAAAAAAD//w4AAQAAAAAAAAD//w8AAQAAAAAAAAD//xAAAQAAAAAAAAD//xEAAQAAAAAAAAD//xIAAQAAAAAAAAAZAAAAAQAAAAAAAAAZAAEAAQAAAAAAAAAZAAIAAQAAAAAAAAAZAAMAAQAAAAAAAAAZAAQAAQAAAAAAAAAZAAUAAQAAAAAAAAAZAAYAAQAAAAAAAAAZAAcAAQAAAAAAAAAZAAgAAQAAAAAAAAAZAAkAAQAAAAAAAAAZAAoAAQAAAAAAAAAZAAsAAQAAAAAAAAAZAAwAAQAAAAAAAAAZAA0AAQAAAAAAAAAZAA4AAQAAAAAAAAAZAA8AAQAAAAAAAAAZABAAAQAAAAAAAAAZABEAAQAAAAAAAAAZABIAAQAAAAAAAAAQAP//AQAAAAAAAAARAP//AQAAAAAAAAASAP//AQAAAAAAAAATAP//AQAAAAAAAAAUAP//AQAAAAAAAAAVAP//AQAAAAAAAAAWAP//AQAAAAAAAAAXAP//AQAAAAAAAAAYAP//AQAAAAAAAAAZAP//AQAAAAAAAAD/////AQAAAAAAAAAAAP//AQAAAAAAAAABAP//AQAAAAAAAAACAP//AQAAAAAAAAADAP//AQAAAAAAAAAEAP//AQAAAAAAAAAFAP//AQAAAAAAAAAGAP//AQAAAAAAAAAHAP//AQAAAAAAAAAIAP//AQAAAAAAAAD//xMAAQAAAAAAAAAAABMAAQAAAAAAAAABABMAAQAAAAAAAAAXABMAAQAAAAAAAAAYABMAAQAAAAAAAAAZABMAAQAAAAAAAAD//+r/AgAAAAAAAAD//+v/AgAAAAAAAAD//+z/AgAAAAAAAAD//+3/AgAAAAAAAAD//+7/AgAAAAAAAAD//+//AgAAAAAAAAD///D/AgAAAAAAAAD///H/AgAAAAAAAAD///L/AgAAAAAAAAD///P/AgAAAAAAAAD///T/AgAAAAAAAAD///X/AgAAAAAAAAD///b/AgAAAAAAAAD///f/AgAAAAAAAAD///j/AgAAAAAAAAD///n/AgAAAAAAAAD///r/AgAAAAAAAAD///v/AgAAAAAAAAD///z/AgAAAAAAAAD///3/AgAAAAAAAAD///7/AgAAAAAAAAAAAOr/AgAAAAAAAAAAAP7/AgAAAAAAAAABAP7/AgAAAAAAAAABAOr/AgAAAAAAAAACAOr/AgAAAAAAAAADAOr/AgAAAAAAAAAEAOr/AgAAAAAAAAAFAOr/AgAAAAAAAAAGAOr/AgAAAAAAAAAHAOr/AgAAAAAAAAAIAOr/AgAAAAAAAAAQAOr/AgAAAAAAAAARAOr/AgAAAAAAAAASAOr/AgAAAAAAAAATAOr/AgAAAAAAAAAUAOr/AgAAAAAAAAAVAOr/AgAAAAAAAAAWAOr/AgAAAAAAAAAXAOr/AgAAAAAAAAAYAOr/AgAAAAAAAAAZAOr/AgAAAAAAAAAZAOv/AgAAAAAAAAAZAOz/AgAAAAAAAAAXAP7/AgAAAAAAAAAYAP7/AgAAAAAAAAAZAO3/AgAAAAAAAAAZAO7/AgAAAAAAAAAZAO//AgAAAAAAAAAZAPD/AgAAAAAAAAAZAPH/AgAAAAAAAAAZAPL/AgAAAAAAAAAZAPP/AgAAAAAAAAAZAPT/AgAAAAAAAAAZAPX/AgAAAAAAAAAZAPb/AgAAAAAAAAAZAPf/AgAAAAAAAAAZAPj/AgAAAAAAAAAZAPn/AgAAAAAAAAAZAPr/AgAAAAAAAAAZAPv/AgAAAAAAAAAZAPz/AgAAAAAAAAAZAP3/AgAAAAAAAAAZAP7/AgAAAAAAAAD//9X/AwAAAAAAAAD//9b/AwAAAAAAAAD//9f/AwAAAAAAAAD//9j/AwAAAAAAAAD//9n/AwAAAAAAAAD//9r/AwAAAAAAAAD//9v/AwAAAAAAAAD//9z/AwAAAAAAAAD//93/AwAAAAAAAAD//97/AwAAAAAAAAD//9//AwAAAAAAAAD//+D/AwAAAAAAAAD//+H/AwAAAAAAAAD//+L/AwAAAAAAAAD//+P/AwAAAAAAAAD//+T/AwAAAAAAAAD//+X/AwAAAAAAAAD//+b/AwAAAAAAAAD//+f/AwAAAAAAAAD//+j/AwAAAAAAAAD//+n/AwAAAAAAAAAAANX/AwAAAAAAAAAAAOn/AwAAAAAAAAABANX/AwAAAAAAAAABAOn/AwAAAAAAAAACANX/AwAAAAAAAAADANX/AwAAAAAAAAAEANX/AwAAAAAAAAAFANX/AwAAAAAAAAAGANX/AwAAAAAAAAAHANX/AwAAAAAAAAAIANX/AwAAAAAAAAAQANX/AwAAAAAAAAARANX/AwAAAAAAAAASANX/AwAAAAAAAAATANX/AwAAAAAAAAAUANX/AwAAAAAAAAAVANX/AwAAAAAAAAAWANX/AwAAAAAAAAAXANX/AwAAAAAAAAAYANX/AwAAAAAAAAAZANX/AwAAAAAAAAAZANb/AwAAAAAAAAAZANf/AwAAAAAAAAAXAOn/AwAAAAAAAAAYAOn/AwAAAAAAAAAZANj/AwAAAAAAAAAZANn/AwAAAAAAAAAZANr/AwAAAAAAAAAZANv/AwAAAAAAAAAZANz/AwAAAAAAAAAZAN3/AwAAAAAAAAAZAN7/AwAAAAAAAAAZAN//AwAAAAAAAAAZAOD/AwAAAAAAAAAZAOH/AwAAAAAAAAAZAOL/AwAAAAAAAAAZAOP/AwAAAAAAAAAZAOT/AwAAAAAAAAAZAOX/AwAAAAAAAAAZAOb/AwAAAAAAAAAZAOf/AwAAAAAAAAAZAOj/AwAAAAAAAAAZAOn/AwAAAAAAAAA=")
 tile_set = ExtResource("2_6m5y6")
+
+[node name="WhiteArrowUp" type="Sprite2D" parent="."]
+position = Vector2(400, 280)
+scale = Vector2(2, 2)
+texture = ExtResource("2_3q5t7")
+
+[node name="blocks" type="Node2D" parent="."]
+
+[node name="block16" parent="blocks" instance=ExtResource("3_bvj3g")]
+position = Vector2(400, 280)
+scale = Vector2(1.5, 1.5)
+
+[node name="Diamond" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(112, -536)
+
+[node name="Diamond3" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(304, -536)
+
+[node name="Diamond6" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(352, -416)
+
+[node name="Diamond7" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(160, -496)
+
+[node name="Diamond8" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(208, -456)
+
+[node name="Diamond9" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(112, -456)
+
+[node name="Diamond10" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(256, -496)
+
+[node name="Diamond11" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(352, -496)
+
+[node name="Diamond12" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(400, -456)
+
+[node name="Diamond13" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(112, -376)
+
+[node name="Diamond14" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(208, -376)
+
+[node name="Diamond16" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(304, -296)
+
+[node name="Diamond17" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(400, -376)
+
+[node name="Diamond18" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(160, -336)
+
+[node name="Diamond20" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(112, -296)
+
+[node name="Diamond21" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(256, -336)
+
+[node name="Diamond22" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(352, -336)
+
+[node name="Diamond24" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(256, -416)
+
+[node name="Diamond27" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(496, -536)
+
+[node name="Diamond29" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(592, -456)
+
+[node name="Diamond30" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(688, -536)
+
+[node name="Diamond32" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(448, -496)
+
+[node name="Diamond35" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(544, -496)
+
+[node name="Diamond36" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(640, -496)
+
+[node name="Diamond37" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(688, -456)
+
+[node name="Diamond40" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(592, -376)
+
+[node name="Diamond42" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(688, -376)
+
+[node name="Diamond43" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(448, -336)
+
+[node name="Diamond44" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(496, -296)
+
+[node name="Diamond46" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(544, -336)
+
+[node name="Diamond47" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(640, -336)
+
+[node name="Diamond48" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(688, -296)
+
+[node name="Diamond49" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(544, -416)
+
+[node name="Diamond50" parent="blocks" instance=ExtResource("6_4lokb")]
+position = Vector2(448, -416)
+
+[node name="Area Change" type="Node2D" parent="."]
+
+[node name="area change up" type="Area2D" parent="Area Change"]
+
+[node name="stage 2" type="CollisionShape2D" parent="Area Change/area change up"]
+position = Vector2(400.5, 45)
+shape = SubResource("RectangleShape2D_gdrsd")
+
+[node name="area change down2" type="Area2D" parent="Area Change"]
+
+[node name="stage 1" type="CollisionShape2D" parent="Area Change/area change down2"]
+position = Vector2(400, -100.5)
+shape = SubResource("RectangleShape2D_tudc1")
+
+[node name="area to change up" type="Area2D" parent="Area Change"]
+
+[node name="stage 3" type="CollisionShape2D" parent="Area Change/area to change up"]
+position = Vector2(398, -627)
+shape = SubResource("RectangleShape2D_xl7y7")
+
+[node name="area change down" type="Area2D" parent="Area Change"]
+
+[node name="stage 2" type="CollisionShape2D" parent="Area Change/area change down"]
+position = Vector2(400, -791)
+shape = SubResource("RectangleShape2D_tudc1")
 
 [node name="Control" type="Control" parent="."]
 z_index = -2391
@@ -105,197 +245,14 @@ metadata/_edit_use_anchors_ = true
 [node name="bat3" parent="." instance=ExtResource("2_vetbr")]
 position = Vector2(400, -834)
 
-[node name="block16" parent="." instance=ExtResource("3_bvj3g")]
-position = Vector2(400, 280)
-
-[node name="Diamond" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(112, -536)
-
-[node name="Diamond2" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(208, -536)
-
-[node name="Diamond3" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(304, -536)
-
-[node name="Diamond4" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(304, -456)
-
-[node name="Diamond5" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(400, -536)
-
-[node name="Diamond6" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(352, -416)
-
-[node name="Diamond7" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(160, -496)
-
-[node name="Diamond8" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(208, -456)
-
-[node name="Diamond9" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(112, -456)
-
-[node name="Diamond10" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(256, -496)
-
-[node name="Diamond11" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(352, -496)
-
-[node name="Diamond12" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(400, -456)
-
-[node name="Diamond13" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(112, -376)
-
-[node name="Diamond14" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(208, -376)
-
-[node name="Diamond15" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(304, -376)
-
-[node name="Diamond16" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(304, -296)
-
-[node name="Diamond17" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(400, -376)
-
-[node name="Diamond18" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(160, -336)
-
-[node name="Diamond19" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(208, -296)
-
-[node name="Diamond20" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(112, -296)
-
-[node name="Diamond21" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(256, -336)
-
-[node name="Diamond22" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(352, -336)
-
-[node name="Diamond23" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(400, -296)
-
-[node name="Diamond24" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(256, -416)
-
-[node name="Diamond25" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(160, -416)
-
-[node name="Diamond27" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(496, -536)
-
-[node name="Diamond28" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(592, -536)
-
-[node name="Diamond29" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(592, -456)
-
-[node name="Diamond30" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(688, -536)
-
-[node name="Diamond31" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(640, -416)
-
-[node name="Diamond32" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(448, -496)
-
-[node name="Diamond33" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(496, -456)
-
-[node name="Diamond35" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(544, -496)
-
-[node name="Diamond36" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(640, -496)
-
-[node name="Diamond37" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(688, -456)
-
-[node name="Diamond39" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(496, -376)
-
-[node name="Diamond40" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(592, -376)
-
-[node name="Diamond41" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(592, -296)
-
-[node name="Diamond42" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(688, -376)
-
-[node name="Diamond43" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(448, -336)
-
-[node name="Diamond44" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(496, -296)
-
-[node name="Diamond46" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(544, -336)
-
-[node name="Diamond47" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(640, -336)
-
-[node name="Diamond48" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(688, -296)
-
-[node name="Diamond34" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(160, -256)
-
-[node name="Diamond51" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(256, -256)
-
-[node name="Diamond52" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(352, -256)
-
-[node name="Diamond55" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(448, -256)
-
-[node name="Diamond57" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(544, -256)
-
-[node name="Diamond58" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(640, -256)
-
-[node name="Diamond49" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(544, -416)
-
-[node name="Diamond50" parent="." instance=ExtResource("6_4lokb")]
-position = Vector2(448, -416)
-
-[node name="area change up" type="Area2D" parent="."]
-
-[node name="stage 2" type="CollisionShape2D" parent="area change up"]
-position = Vector2(400.5, 45)
-shape = SubResource("RectangleShape2D_gdrsd")
-
-[node name="area change down2" type="Area2D" parent="."]
-
-[node name="stage 1" type="CollisionShape2D" parent="area change down2"]
-position = Vector2(400, -100.5)
-shape = SubResource("RectangleShape2D_tudc1")
-
-[node name="area to change up" type="Area2D" parent="."]
-
-[node name="stage 3" type="CollisionShape2D" parent="area to change up"]
-position = Vector2(398, -627)
-shape = SubResource("RectangleShape2D_xl7y7")
-
-[node name="area change down" type="Area2D" parent="."]
-
-[node name="stage 2" type="CollisionShape2D" parent="area change down"]
-position = Vector2(400, -791)
-shape = SubResource("RectangleShape2D_tudc1")
-
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(399, -892)
 
+[connection signal="area_entered" from="Area Change/area change up" to="." method="_on_area_change_up_area_entered"]
+[connection signal="body_entered" from="Area Change/area change up" to="." method="_on_area_change_up_body_entered"]
+[connection signal="body_entered" from="Area Change/area change down2" to="." method="_on_area_change_down_2_body_entered"]
+[connection signal="body_entered" from="Area Change/area to change up" to="." method="_on_area_to_change_up_body_entered"]
+[connection signal="body_entered" from="Area Change/area change down" to="." method="_on_area_change_down_body_entered"]
 [connection signal="add_score" from="ball" to="." method="_on_ball_add_score"]
 [connection signal="camera_shake" from="ball" to="." method="_on_ball_camera_shake"]
 [connection signal="camera_shake" from="ball" to="ball/ball_camera" method="_on_ball_camera_shake"]
-[connection signal="area_entered" from="area change up" to="." method="_on_area_change_up_area_entered"]
-[connection signal="body_entered" from="area change up" to="." method="_on_area_change_up_body_entered"]
-[connection signal="body_entered" from="area change down2" to="." method="_on_area_change_down_2_body_entered"]
-[connection signal="body_entered" from="area to change up" to="." method="_on_area_to_change_up_body_entered"]
-[connection signal="body_entered" from="area change down" to="." method="_on_area_change_down_body_entered"]
