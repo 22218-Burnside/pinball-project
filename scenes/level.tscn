@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://cpht55eomw74t"]
+[gd_scene load_steps=14 format=4 uid="uid://cpht55eomw74t"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_i0k2m"]
 [ext_resource type="PackedScene" uid="uid://bkl3j8h0m2aqt" path="res://Prefabs/ball.tscn" id="1_p40qp"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://bieqbvuutyss7" path="res://Prefabs/block.tscn" id="3_bvj3g"]
 [ext_resource type="Script" path="res://scripts/ball_camera.gd" id="4_p8jpm"]
 [ext_resource type="PackedScene" uid="uid://c5ebm08jhgvxo" path="res://Prefabs/diamond.tscn" id="6_4lokb"]
+[ext_resource type="PackedScene" uid="uid://vjhfismk8r26" path="res://Prefabs/pentagon.tscn" id="9_iec8i"]
+[ext_resource type="AudioStream" uid="uid://fgvajvro1vsm" path="res://fast tempo.mp3" id="10_f23kk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gdrsd"]
 size = Vector2(287, 32)
@@ -139,6 +141,114 @@ position = Vector2(544, -416)
 [node name="Diamond50" parent="blocks" instance=ExtResource("6_4lokb")]
 position = Vector2(448, -416)
 
+[node name="pentagon" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(96, -1208)
+
+[node name="pentagon2" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(160, -1208)
+
+[node name="pentagon3" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(224, -1208)
+
+[node name="pentagon4" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(288, -1208)
+
+[node name="pentagon5" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(352, -1208)
+
+[node name="pentagon6" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(416, -1208)
+
+[node name="pentagon7" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(480, -1208)
+
+[node name="pentagon8" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(544, -1208)
+
+[node name="pentagon9" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(608, -1208)
+
+[node name="pentagon10" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(192, -1136)
+
+[node name="pentagon11" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(256, -1136)
+
+[node name="pentagon12" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(320, -1136)
+
+[node name="pentagon13" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(384, -1136)
+
+[node name="pentagon14" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(448, -1136)
+
+[node name="pentagon15" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(512, -1136)
+
+[node name="pentagon16" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(576, -1136)
+
+[node name="pentagon17" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(640, -1136)
+
+[node name="pentagon18" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(704, -1136)
+
+[node name="pentagon19" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(96, -1064)
+
+[node name="pentagon20" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(160, -1064)
+
+[node name="pentagon21" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(224, -1064)
+
+[node name="pentagon22" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(288, -1064)
+
+[node name="pentagon23" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(352, -1064)
+
+[node name="pentagon24" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(416, -1064)
+
+[node name="pentagon25" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(480, -1064)
+
+[node name="pentagon26" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(544, -1064)
+
+[node name="pentagon27" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(608, -1064)
+
+[node name="pentagon28" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(192, -992)
+
+[node name="pentagon29" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(256, -992)
+
+[node name="pentagon30" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(320, -992)
+
+[node name="pentagon31" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(384, -992)
+
+[node name="pentagon32" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(448, -992)
+
+[node name="pentagon33" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(512, -992)
+
+[node name="pentagon34" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(576, -992)
+
+[node name="pentagon35" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(640, -992)
+
+[node name="pentagon36" parent="blocks" instance=ExtResource("9_iec8i")]
+position = Vector2(704, -992)
+
 [node name="Area Change" type="Node2D" parent="."]
 
 [node name="area change up" type="Area2D" parent="Area Change"]
@@ -162,7 +272,7 @@ shape = SubResource("RectangleShape2D_xl7y7")
 [node name="area change down" type="Area2D" parent="Area Change"]
 
 [node name="stage 2" type="CollisionShape2D" parent="Area Change/area change down"]
-position = Vector2(400, -791)
+position = Vector2(400, -768)
 shape = SubResource("RectangleShape2D_tudc1")
 
 [node name="Control" type="Control" parent="."]
@@ -247,6 +357,11 @@ position = Vector2(400, -834)
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(399, -892)
+
+[node name="music fast tempo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_f23kk")
+volume_db = -16.0
+autoplay = true
 
 [connection signal="area_entered" from="Area Change/area change up" to="." method="_on_area_change_up_area_entered"]
 [connection signal="body_entered" from="Area Change/area change up" to="." method="_on_area_change_up_body_entered"]

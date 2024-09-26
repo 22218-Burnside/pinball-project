@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=4 uid="uid://cejv14iy5pgc8"]
+[gd_scene load_steps=5 format=4 uid="uid://cejv14iy5pgc8"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_st8f2"]
 [ext_resource type="TileSet" uid="uid://i4po48cav6nf" path="res://tile set for the walls.tres" id="2_ms0sx"]
 [ext_resource type="AudioStream" uid="uid://bod6uw02gonap" path="res://sounds/sfx_menu_click.mp3" id="4_odfb0"]
+[ext_resource type="AudioStream" uid="uid://d2yaq6wtoaubw" path="res://slow tempo.mp3" id="4_wulcp"]
 
 [node name="Menu" type="Control"]
 texture_filter = 1
@@ -59,7 +60,12 @@ offset_bottom = 244.0
 scale = Vector2(2, 2)
 text = "PINBALL MANIA"
 
+[node name="music slow tempo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_wulcp")
+volume_db = -16.0
+autoplay = true
+
 [connection signal="pressed" from="VBoxContainer/start button" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/quit button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit button" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit button" to="." method="_on_start_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

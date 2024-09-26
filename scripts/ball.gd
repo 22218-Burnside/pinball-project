@@ -22,8 +22,6 @@ func _process(delta: float) -> void:
 		#emits signal to the camera for shake
 		camera_shake.emit()
 		#bounce!
-		$wall_hit.pitch_scale += $wall_hit.pitch_scale + 0.1
-		#clamp values
 		velocity = velocity.bounce(collision.get_normal())
 		#velocity = velocity.rotated(randf_range(-0.1,0.1))
 		#TODO- check the thing we bounce against?
@@ -43,21 +41,26 @@ func _process(delta: float) -> void:
 				velocity = velocity.rotated(deg_to_rad(10))
 		if other is Block:
 			#TODO send ginal to update score?
-			add_score.emit()
+			add_score.emit(10)
 			var EXPLOSION = explosion_prefab.instantiate()
 			EXPLOSION.position = position
 			get_parent().add_child(EXPLOSION)
 			other.queue_free()
 			block_hit.play()
-			$block_hit.pitch_scale += $block_hit.pitch_scale + 0.1
 		if other is Diamond:
-			add_score.emit()
+			add_score.emit(30)
 			var EXPLOSION = explosion_prefab.instantiate()
 			EXPLOSION.position = position
 			get_parent().add_child(EXPLOSION)
 			other.queue_free()
 			block_hit.play()
-			$block_hit.pitch_scale += $block_hit.pitch_scale + 0.1
+		if other is Pentagon:
+			add_score.emit(50)
+			var EXPLOSION = explosion_prefab.instantiate()
+			EXPLOSION.position = position
+			get_parent().add_child(EXPLOSION)
+			other.queue_free()
+			block_hit.play()
 		else:
 			pass
 			wall_hit.play()

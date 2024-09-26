@@ -9,9 +9,11 @@ func _ready():
 
 func _process(delta):
 	$score_label.text = ("Score: ") + str(GlobalSingleton.score)
-
-func _on_ball_add_score():
-	GlobalSingleton.add_score(10)
+	$score_label2.text = ("Score: ") + str(GlobalSingleton.score)
+	$score_label3.text = ("Score: ") + str(GlobalSingleton.score)
+	
+func _on_ball_add_score(score):
+	GlobalSingleton.add_score(score)
 
 #region Camera changing area scripts
 # These scripts make the ball go up

@@ -2,7 +2,6 @@ extends Control
 @onready var sfx_menu_click = $"sfx menu click"
 var scenetoload = ""
 
-
 func _ready():
 	$"VBoxContainer/start button".grab_focus()
 
